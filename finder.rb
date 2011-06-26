@@ -12,11 +12,11 @@ class Finder
   end
 
   def plain_name(s)
-    "r['#{s}'].to_s"
+    "r['#{s}'].to_s.chop"
   end
 
   def action_name(s)
-    "r['#{s.gsub(/\..*$/,'')}'].to_s.#{s.gsub(/^[a-z_]*\./,'')}"
+    "r['#{s.gsub(/\..*$/,'')}'].to_s.chop.#{s.gsub(/^[a-z_]*\./,'')}"
   end
 
   def action_name?(s)

@@ -1,6 +1,6 @@
-tally isbns
+tally isbn
   for records where isbn matches /./
-  tally by isbn btitle
+  tally by isbn
 
 tally books_with_title
   for records where btitle matches /./

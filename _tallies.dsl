@@ -1,25 +1,25 @@
-isbns
+isbn
   match
     field = isbn
     pattern = /./
-  group = isbn btitle
+  group = isbn
 
-books_with_title
+items_with_title
   match
     field = btitle
     pattern = /./
   match
     field = title
     pattern = /./
-  group = btitle
+  group = institutionResolverID btitle
 
-books_with_given_title
+items_with_title_match
   match
     field = btitle
-    pattern = /Numerical Simulations/
-  group = institutionResolverID encryptedUserID btitle
+    pattern = /NATUR/
+  group = institutionResolverID btitle
 
-sid_targets
+services
   match
     field = sid
     pattern = /./
